@@ -15,6 +15,32 @@ body{
     color:white;
 }
 
+.banners{
+    box-shadow: 2px 5px 6px 2px rgb(90, 86, 86,0.5);
+    border-radius: 10%;
+    margin-top: 25px;
+    
+}
+.banners:hover{
+    box-shadow: 3px 6px 7px 4px rgba(214, 198, 198, 0.5);
+    border-radius: 10%;
+    margin-top: 25px;
+    transform: scale(1.05);
+    
+}
+
+.banners-img{
+    height: 250px;
+    width: 100%;
+    border:2px solid darkgreen;
+    border-radius: 10%;
+}
+
+.banners-img-product{
+    height: 200px;
+    width: 100%;
+    border-radius: 10%;
+}
 
 
 
