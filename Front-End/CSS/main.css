@@ -43,9 +43,58 @@ body{
 }
 
 
+.favorite-item{
+    font-size: 30px;
+    margin-left: 20px;
+}
 
+.cart-item{
+    font-size: 30px;
+    margin-right: 20px;
+    
+}
 
+.register{
+    background: url('../Photos/register.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+}
 
+.footer{
+    background: url('../Photos/footer.png');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.foot-head{
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foot-link{
+    color: orange;
+    display: block;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.foot-link:hover{
+    text-decoration: none;
+    color: yellow;
+    display: block;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.foot-head-div.newhr{
+    border: 5px solid white;
+    width: 70px;
+}
 
 
 

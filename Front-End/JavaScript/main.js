@@ -19,3 +19,35 @@ function changemode(){
         
     }
 }
+
+
+
+function favourite(i){
+    
+
+    let text = document.getElementsByClassName('favorite-item')[i].style.color;
+    console.log(text);
+    if(text=="gray")
+    {
+        document.getElementsByClassName('favorite-item')[i].style="color:red;";
+    }
+    else
+    {
+        document.getElementsByClassName('favorite-item')[i].style="color:gray;";   
+    }
+}
+
+function cart(i){
+    
+
+    let text = document.getElementsByClassName('cart-item')[i].style.color;
+    console.log(text);
+    if(text=="gray")
+    {
+        document.getElementsByClassName('cart-item')[i].style="color:rgb(35, 192, 35);";
+    }
+    else
+    {
+        document.getElementsByClassName('cart-item')[i].style="color:gray;";   
+    }
+}

@@ -23,15 +23,28 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand bg-primary"style="color:white" href="#">Shopping App</a>
-
+            
             
           </div>
           
           <div class="collapse navbar-collapse bg-primary" id="myNavbar">
             
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" style="color:white"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#" style="color:white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li>
+                <form class="form-inline" style="margin-top: 10px;" action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email" size="6">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" size="6">
+                  </div>
+                  
+                    <input class="btn btn-success" type="submit" value="Login">
+                  
+                </form>
+              </li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal" style="color:white"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              
               <li><a href="#" style="color:white"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
               <li><input type="button" style="color: black;margin-top: 10px;" class="" value="Light Mode" id="changemode" onClick="changemode()"></li>
             </ul>
@@ -53,6 +66,96 @@
           
 
       </div>
+
+      <!--  Login Model -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3>Register User</h3>
+            </div>
+
+            <div class="modal-body">
+              <div class="col-md-4 ">
+                <img width="100%" height="100%" src="../Photos/signup-image.jpg" alt="">
+                <br><br><br>
+
+                <button class="btn btn-warning">Login with Gmail</button>
+              </div>
+              <div class="col-md-8 register">
+                <br><br>
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Full Name</label>
+                        <input type="text" class="form-control">
+                    
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Mobile</label>
+                        <input type="text" class="form-control">
+                    
+                      </div>
+                    </div>
+
+                  </div>
+                  
+
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+
+                    <input class="btn bg-primary" type="reset">
+                    <input class="btn btn-success" type="submit">
+
+                  </div>
+
+                </form>
+
+
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+            
+
+          </div>
+
+        
+          
+        </div>
+
+
+      </div> 
+
+
+
+
+
+
+
       
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -88,7 +191,10 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      
+
+
+
+           
 
 
 
@@ -132,7 +238,10 @@
               <hr>
               <h4 style="text-align: center;">Product Name</h4>
               <h5 style="text-align: center;color: rgb(49, 177, 49);">&#x20B9; 8000</h5>
-              
+              <p style="text-align: center;" >
+                <span style="color: gray;" onclick="cart(0)" class="glyphicon glyphicon-shopping-cart cart-item"></span>
+                <span style="color: gray;"  onclick="favourite(0)" class="glyphicon glyphicon-heart favorite-item"></span>
+              </p>
             </div>
           </div>
           <div class=" col-md-3 col-sm-6 col-xs-12">
@@ -141,7 +250,10 @@
               <hr>
               <h4 style="text-align: center;">Product Name</h4>
               <h5 style="text-align: center;color: rgb(49, 177, 49);">&#x20B9; 8000</h5>
-              
+              <p style="text-align: center;" >
+                <span style="color: gray;" onclick="cart(1)" class="glyphicon glyphicon-shopping-cart cart-item"></span>
+                <span style="color: gray;"  onclick="favourite(1)" class="glyphicon glyphicon-heart favorite-item"></span>
+              </p>
             </div>
           </div>
           <div class=" col-md-3 col-sm-6 col-xs-12">
@@ -150,7 +262,10 @@
               <hr>
               <h4 style="text-align: center;">Product Name</h4>
               <h5 style="text-align: center;color: rgb(49, 177, 49);">&#x20B9; 8000</h5>
-              
+              <p style="text-align: center;" >
+                <span style="color: gray;" onclick="cart(2)" class="glyphicon glyphicon-shopping-cart cart-item"></span>
+                <span style="color: gray;"  onclick="favourite(2)" class="glyphicon glyphicon-heart favorite-item"></span>
+              </p>
             </div>
           </div>
           <div class=" col-md-3 col-sm-6 col-xs-12">
@@ -159,6 +274,10 @@
               <hr>
               <h4 style="text-align: center;">Product Name</h4>
               <h5 style="text-align: center;color: rgb(49, 177, 49);">&#x20B9; 8000</h5>
+              <p style="text-align: center;" >
+                <span style="color: gray;" onclick="cart(3)" class="glyphicon glyphicon-shopping-cart cart-item"></span>
+                <span style="color: gray;"  onclick="favourite(3)" class="glyphicon glyphicon-heart favorite-item"></span>
+              </p>
               
             </div>
           </div>
@@ -171,6 +290,59 @@
       </div>
 
       
+
+
+
+      <div class="footer container-fluid">
+        <div class="row">
+
+          <div class="col-md-4">
+            
+            <div class="foot-head-div">
+              <h3 class="foot-head">About Us</h3>
+              <hr class="newhr">
+            </div>
+              <a class="foot-link" href="">Contact</a>
+              <a class="foot-link" href="">Details</a>
+              <a class="foot-link" href="">Services</a>
+
+          </div>
+
+          <div class="col-md-4">
+            
+            <div>
+              <h3 class="foot-head">Important Links</h3>
+              <hr class="newhr">
+            </div>
+              <a class="foot-link" href="">Contact</a>
+              <a class="foot-link" href="">Details</a>
+              <a class="foot-link" href="">Services</a>
+              
+          </div>
+
+          <div class="col-md-4">
+            
+            <div>
+              <h3 class="foot-head">Feedback</h3>
+              <hr class="newhr">
+            </div>
+
+            
+            <form action="">
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control">
+              </div>
+              <div class="form-group" class="form-control"size="5">
+                <textarea type="text" class="form-control">Type Feedback</textarea>
+              </div>
+              <input type="submit" class="btn btn-success btn-block form-control">
+            </form>
+              
+          </div>
+
+
+        </div>
+      </div>
       
 
     <script src="../JavaScript/main.js"></script>
