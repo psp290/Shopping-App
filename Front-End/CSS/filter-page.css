@@ -1,0 +1,69 @@
+.filter-block{
+    box-shadow: 2px 5px 4px 3px rgba(95, 72, 95, 0.425);
+    border: 1px solid rgb(160, 151, 151);
+}
+
+.filter-block-item{
+    box-shadow: 2px 5px 4px 3px rgba(95, 72, 95, 0.425);
+    border: 1px solid rgb(160, 151, 151);
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.filter-block-item:hover{
+    box-shadow: 2px 5px 4px 3px rgba(95, 72, 95, 0.425);
+    border: 1px solid rgb(160, 151, 151);
+    height: 150px;
+    margin-bottom: 20px;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+.filter-item-img{
+    height: 140px;
+    padding-left: 20px;
+}
+
+.filter-item-price{
+    color: green;
+    font-size: 20px;
+}
+.filter-item-rating{
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    background-color: rgb(146, 21, 146);
+}
+
+.filter-item-delivery{
+    margin-top: 15px;
+    color: green;
+}
+
+.filter-item-brand{
+    font-weight: 600;
+    color: rgb(122, 24, 192);
+}
+
+.filter-item-date{
+    color: gray;
+    font-weight: 400;
+}
+.filter-item-stock{
+    
+    color: green;
+}
+
+.icon{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-item-name{
+    font-weight: 600;
+}
