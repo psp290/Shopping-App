@@ -15,8 +15,16 @@ Product
     "brand":"6010ff4dc1a0372a98d88b17"
 }
 
+User
+{
+    "full_name":"Pratik Patil",
+    "username":"psp290",
+    "phone":"8668330047",
+    "email":"psp@mail.com",
+    "password":"pratik",
+    "isActive":true,
+    "role":"admin"
+}
 
 
-ListModel.findOne({"_id" : "57e6bcab6b383120f0395aed", 'recipients.status' : 1},
-{_id:1, name: 1, subject:1,'recipients.$': 1}, 
-function(err,list){...});
+npm i jsonwebtoken

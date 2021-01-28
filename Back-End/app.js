@@ -7,6 +7,7 @@ const db = require('./db');
 const productRoutes = require('./routes/product');
 const brandRoutes = require('./routes/brand');
 const typeRoutes = require('./routes/type');
+const userRoutes = require('./routes/user');
 
 
 const port = process.env.PORT || 2000;
@@ -25,6 +26,7 @@ app.get('/',(req,res)=>{
 app.use("/api",productRoutes);
 app.use("/api",brandRoutes);
 app.use("/api",typeRoutes);
+app.use("/api",userRoutes);
 
 
 
