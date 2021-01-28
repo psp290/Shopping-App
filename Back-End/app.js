@@ -2,7 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const db = require('./db');
-const productRoutes = require('./routes/product')
+
+
+const productRoutes = require('./routes/product');
+const brandRoutes = require('./routes/brand');
+const typeRoutes = require('./routes/type');
 
 
 const port = process.env.PORT || 2000;
@@ -19,7 +23,8 @@ app.get('/',(req,res)=>{
 
 
 app.use("/api",productRoutes);
-
+app.use("/api",brandRoutes);
+app.use("/api",typeRoutes);
 
 
 

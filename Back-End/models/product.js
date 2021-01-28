@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 var ProductSchema = new mongoose.Schema({
     name:{
         type:String,
@@ -26,9 +27,12 @@ var ProductSchema = new mongoose.Schema({
     },
     brand:{
         type:mongoose.Schema.Types.ObjectId, ref: 'Brand',
+    },
+    discount:{
+        type:Number
     }
 
-});
+},{timestamps:true});
 
 
 

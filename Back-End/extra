@@ -1,2 +1,22 @@
 Db name : shopping-app
 db password : shopping-123
+
+
+
+Product
+{
+    "name":"Samsung M30",
+    "price":15000,
+    "description":"Samsung mobile with greate feature",
+    "stock":true,
+    "quantity":200,
+    "type":"601110247d256b3bf8777669",
+    "rating":4.5,
+    "brand":"6010ff4dc1a0372a98d88b17"
+}
+
+
+
+ListModel.findOne({"_id" : "57e6bcab6b383120f0395aed", 'recipients.status' : 1},
+{_id:1, name: 1, subject:1,'recipients.$': 1}, 
+function(err,list){...});
