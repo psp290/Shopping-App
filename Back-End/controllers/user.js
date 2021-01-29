@@ -109,3 +109,15 @@ exports.activateUser = (req,res)=>{
         );
     });
 }
+
+
+// delete user 
+
+exports.deleteUser = (req,res)=>{
+    var id = req.body._id;
+
+    User.findByIdAndRemove({_id:id},(err,result)=>{
+        if(err) res.json(err);
+        res.send('User is deleted');
+    });
+}

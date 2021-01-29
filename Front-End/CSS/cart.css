@@ -1,0 +1,106 @@
+
+.cart-item{
+    box-shadow: 1px 4px 6px 2px rgba(112, 99, 99, 0.541);
+    padding-left: 10px;
+}
+
+.cart-item-img{
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cart-item-head{
+   font-size: 25px;
+   font-weight: 600; 
+}
+
+.cart-item-price{
+    color: green;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cart-item-brand{
+    color: indigo;
+    font-size: 25px;
+}
+
+.cart-item-delivery{
+    color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.lbl{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.avail{
+    font-size: 15px;
+    color: green;
+}
+
+.quantity{
+    font-size: 15px;
+    color:rgb(87, 87, 179)
+}
+
+.cart-item-stock{
+    
+    font-size: 15px;
+    color: rgb(10, 104, 10);
+}
+
+.cart-item-nav{
+    
+    box-shadow: 1px 4px 6px 2px rgba(112, 99, 99, 0.541);
+    border: 1px solid gray;
+}
+
+.ip{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.bill-list{
+    box-shadow: 1px 4px 6px 2px rgba(83, 81, 81, 0.459);
+}
+
+.bill-list-head{
+    padding-top: 10px;
+    text-align: center;
+    
+    font-size: 35px;
+}
+
+.bill-list-p{
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.bill-list-price{
+    font-size: 17px;
+}
+
+.bill-list-discount{
+    font-size: 17px;
+    color:green;
+}
+
+.bill-list-charge{
+    font-size: 17px;
+    color: green;
+}
+
+.tamount{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.tprice{
+    font-size: 20px;
+    font-weight: 600;
+}

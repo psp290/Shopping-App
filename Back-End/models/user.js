@@ -19,7 +19,8 @@ var UserSchema = mongoose.Schema({
         type:String
     },
     isActive:{
-        type:Boolean
+        type:Boolean,
+        default:true
     },
     role:{
         type:String,
