@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+
+
+    <link rel="stylesheet" href="../CSS/order.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-inverse bg-primary">
+        <div class="container-fluid bg-primary">
+          <div class="navbar-header  bg-primary">
+            <button type="button" class="navbar-toggle bg-primary" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand bg-primary"style="color:white" href="#">Shopping App</a>
+            
+            
+          </div>
+          
+          <div class="collapse navbar-collapse bg-primary" id="myNavbar">
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <form class="form-inline" style="margin-top: 10px;" action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email" size="6">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" size="6">
+                  </div>
+                  
+                    <input class="btn btn-success" type="submit" value="Login">
+                  
+                </form>
+              </li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal" style="color:white"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              
+              <li><a href="#" style="color:white"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+              <li><input type="button" style="color: black;margin-top: 10px;" class="" value="Light Mode" id="changemode" onClick="changemode()"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron" style="padding: 10px;margin-top: -20px;">
+        <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          
+
+      </div>
+
+      <!--  Login Model -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3>Register User</h3>
+            </div>
+
+            <div class="modal-body">
+              <div class="col-md-4 ">
+                <img width="100%" height="100%" src="../Photos/signup-image.jpg" alt="">
+                <br><br><br>
+
+                <button class="btn btn-warning">Login with Gmail</button>
+              </div>
+              <div class="col-md-8 register">
+                <br><br>
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Full Name</label>
+                        <input type="text" class="form-control">
+                    
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Mobile</label>
+                        <input type="text" class="form-control">
+                    
+                      </div>
+                    </div>
+
+                  </div>
+                  
+
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Username</label>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+
+                    <input class="btn bg-primary" type="reset">
+                    <input class="btn btn-success" type="submit">
+
+                  </div>
+
+                </form>
+
+
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+            
+
+          </div>
+
+        
+          
+        </div>
+
+
+      </div> 
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+    <div class="order">
+
+            
+        <div class="date-log">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h4> Date </h4>
+                </div>
+                <div class="col-md-4">
+                    <h4> Order Id</4>
+                </div>
+                <div class="col-md-4">
+                    <h4> Total cost</h4>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+            <br><br>
+
+
+
+
+
+
+
+
+          
+
+            <div class="circle">
+                &check;
+            </div>
+            <div class="block">
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                &check;
+            </div>
+
+
+            <div class="block">
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                &check;
+            </div>
+
+            <div class="block">
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                &check;
+            </div>
+
+
+            <br>
+
+
+            <div class="block">
+                Order Placed
+            </div>
+            <div class="block">
+                Order Packed
+            </div>
+            <div class="block">
+                Order Shipped
+
+                <div class="block-right">
+                    Order Delivered
+                </div>
+            </div>
+
+        <div style="clear: both;"></div>
+      
+    </div>
+        
+
+    <hr>
+
+
+
+
+    
+    <div class="order">
+
+            
+        <div class="date-log">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h4> Date </h4>
+                </div>
+                <div class="col-md-4">
+                    <h4> Order Id</4>
+                </div>
+                <div class="col-md-4">
+                    <h4> Total cost</h4>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+            <br><br>
+
+
+
+
+
+
+
+
+          
+
+            <div class="circle">
+                &check;
+            </div>
+            <div class="block">
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                &check;
+            </div>
+
+
+            <div class="block">
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                &check;
+            </div>
+
+            <div class="block">
+                <div class="progress" style="height: 10px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:80%">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle">
+                &check;
+            </div>
+
+
+            <br>
+
+
+            <div class="block">
+                Order Placed
+            </div>
+            <div class="block">
+                Order Packed
+            </div>
+            <div class="block">
+                Order Shipped
+
+                <div class="block-right">
+                    Order Delivered
+                </div>
+            </div>
+
+        <div style="clear: both;"></div>
+      
+    </div>
+    
+            
+
+
+
+    
+
+
+            
+
+
+</div>
+
+      
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+      <div class="footer container-fluid">
+        <div class="row">
+
+          <div class="col-md-4">
+            
+            <div class="foot-head-div">
+              <h3 class="foot-head">About Us</h3>
+              <hr class="newhr">
+            </div>
+              <a class="foot-link" href="">Contact</a>
+              <a class="foot-link" href="">Details</a>
+              <a class="foot-link" href="">Services</a>
+
+          </div>
+
+          <div class="col-md-4">
+            
+            <div>
+              <h3 class="foot-head">Important Links</h3>
+              <hr class="newhr">
+            </div>
+              <a class="foot-link" href="">Contact</a>
+              <a class="foot-link" href="">Details</a>
+              <a class="foot-link" href="">Services</a>
+              
+          </div>
+
+          <div class="col-md-4">
+            
+            <div>
+              <h3 class="foot-head">Feedback</h3>
+              <hr class="newhr">
+            </div>
+
+            
+            <form action="">
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control">
+              </div>
+              <div class="form-group" class="form-control"size="5">
+                <textarea type="text" class="form-control">Type Feedback</textarea>
+              </div>
+              <input type="submit" class="btn btn-success btn-block form-control">
+            </form>
+              
+          </div>
+
+
+        </div>
+      </div>
+      
+
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>
