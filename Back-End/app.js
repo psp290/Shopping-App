@@ -9,6 +9,7 @@ const brandRoutes = require('./routes/brand');
 const typeRoutes = require('./routes/type');
 const userRoutes = require('./routes/user');
 const cartRoutes = require('./routes/cart');
+const orderRoutes = require('./routes/order');
 
 
 const port = process.env.PORT || 2000;
@@ -29,7 +30,7 @@ app.use("/api",brandRoutes);
 app.use("/api",typeRoutes);
 app.use("/api",userRoutes);
 app.use("/api",cartRoutes);
-
+app.use("/api",orderRoutes);
 
 
 app.listen(port,(err)=>{

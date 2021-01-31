@@ -58,3 +58,32 @@ remove item
     "productId":"60111c9db64780292c3b5f3b",
     "quantity":30
 }
+
+
+
+{
+    "cartId":"60166fd8ca84503bd4e4a7ba",
+    "user":"6013968bbb9a8a2ca49e0e1f",
+    "city":"Shegaon",
+    "address":"Shegaon",
+    "state":"Maharashtra",
+    "country":"India",
+    "pinCode":"444203",
+    "totalAmount":50000,
+    "paymentStatus":"pending",
+    "paymentType":"cod"
+
+
+}
+
+
+
+// Pack , ship ,delivered
+
+{
+    "orderId":"6016c0f805634d305838fd18"
+}
+
+
+
+///   Create favourite api 
