@@ -28,3 +28,33 @@ User
 
 
 npm i jsonwebtoken
+
+
+Cart
+{
+    "userId":"6013968bbb9a8a2ca49e0e1f",
+    "productId":"60111c9db64780292c3b5f3b"
+}
+
+
+
+
+Update quantity
+{
+    "itemId":"60157a341198d441b087128b",
+    "quantity":30
+}
+
+
+
+
+
+// Update Cart
+
+
+remove item 
+
+{
+    "productId":"60111c9db64780292c3b5f3b",
+    "quantity":30
+}
